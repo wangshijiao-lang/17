@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border-radius: 5px;
+        }
+        #loginDiv{
+            width: 550px;
+            height: 500px;
+            border: 1px solid red;
+            margin: auto;
+            /* 水平自动居中 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -275px;
+            /* 盒子模型的上外边距 */
+            margin-left: -275px;
+            /* 盒子模型的左外边距 */
+            background-color: rgb(252, 252, 252);
+        }
+        #logo{
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+        
+        }
+        #div_username{
+            width: 500px;
+            height: 40px;
+            border: 1px solid lightgrey;
+            margin: auto;
+
+        }
+        /* 后代选择器，input 是的后代*/
+        #div_username input{
+            width: 460px;
+            border:  none;
+            height: 28px;
+            outline: none;
+            /* 当获得焦点后不显示轮廓 */
+            font-size: 20px;
+        }
+        #div_password{
+            width: 500px;
+            height: 40px;
+            border: 1px solid rgb(132, 131, 131);
+            margin: auto;
+            margin-top: 100px;
+        }
+        #div_password input{
+            width: 460px;
+            border:  none;
+            height: 30px;
+            outline: none;
+            /* 当获得焦点后不显示轮廓 */
+        }
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="loginDiv">
+        <img id="logo" src="./nuc.jpeg" width="250">
+        <h1 style="text-align: center;">毕业设计管理系统</h1>
+        <div id="div_username">
+            <img src="./user.png" width="30px">
+            <input placeholder="请输入用户名" >
+        </div>
+        <div id="div_username" style="margin-top:10px">
+            <img src="./password.png" width="30px">
+            <input placeholder="请输入密码";margin-top: 5px;>
+        </div>
+        <div style="width: 480px;margin: auto;">
+            <!-- 居中 -->
+             <button style="width: 100%;background-color: rgb(142, 36, 36);color: aliceblue;font-size: 30px;border: none;margin-top: 5px;border-radius: 5px;">登录</button>
+
+        </div>
+        <div style="width: 480px;margin: auto;text-align: center;margin-top:10px">
+            <img src="./weixin.png" >
+            <img src="./weibo.png" >
+            <img src="./qq.png" >
+        </div>
+        <div style="width: 480px;margin: auto;text-align: center;">
+            开发人员：中国-山西-xx<br>
+            技术支持：xxx
+        </div>
+    </div>
+</body>
+</html>
